@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preload" href="fonts/montserrat-v14-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v14-latin-500.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v14-latin-600.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v14-latin-700.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/montserrat-v14-latin-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <a class="header__logo"><img src="" alt="Лого компании"></a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="">О путешествии</a></li>
+        <li class="nav__item"><a class="nav__link" href="">Цены</a></li>
+      </ul>
+    </nav>
+    <a class="header__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <h1 class="intro__title">Путешествие по Европе</h1>
+      <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
+        потрясающая красота
+        природы.</p>
+      <a class="intro__link" href="">смотреть тур</a>
+    </section>
+    <section class="destination">
+      <h2 class="destination__title">Места посещения</h2>
+      <p class="destination__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+      <ul class="destination__list">
+        <li class="destination__item">
+          <a class="destination__link" href="#"><span class="destination__name">Греция</span></a>
+        </li>
+        <li class="destination__item">
+          <a class="destination__link" href="#"><span class="destination__name">Албания</span></a>
+        </li>
+        <li class="destination__item">
+          <a class="destination__link" href="#"><span class="destination__name">Македония</span></a>
+        </li>
+        <li class="destination__item">
+          <a class="destination__link" href="#"><span class="destination__name">Черногория</span></a>
+        </li>
+        <li class="destination__item">
+          <a class="destination__link" href="#"><span class="destination__name">Хорватия</span></a>
+        </li>
+      </ul>
+    </section>
+    <section class="country">
+      <h2 class="country__title">Греция</h2>
+      <p class="country__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных
+        на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная
+        цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в
+        высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+      </p>
+      <button class="country__button" type="button">Купить тур сейчас</button>
+      <div class="country__review">
+        <h3 class="country__review-title">Отзывы</h3>
+        <p class="country__review-description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие
+          же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как
+          будто стоишь на краю света!
+        </p>
+        <span class="country__review-author">Влада Голицина</span>
+      </div>
+    </section>
+    <section class="price">
+      <h2 class="price__title">Цены</h2>
+      <p class="price__description">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от
+        Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!
+      </p>
+      <div class="price__contact">
+        <h3 class="price__contact-title">Свяжитесь с нами</h3>
+        <a class="price__contact-tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      </div>
+      <div class="price__type">
+        <h3 class="price__type-title">Комплексный<span class="price__type-count">$1999</span></h3>
+        <p class="price__type-description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <ul class="price__type-list">
+          <li class="price__type-item">Разработанный маршрут с гидом группы</li>
+          <li class="price__type-item">Перелет, трансфер и проживание в отелях</li>
+          <li class="price__type-item">Завтраки, ужины в отелях и ланчи на природе</li>
+          <li class="price__type-item">Экскурсии по удивительно красивым местам Европы</li>
+        </ul>
+        <button class="price__type-button" type="button">Купить тур сейчас</button>
+      </div>
+      <div class="price__type">
+        <h3 class="price__type-title">Экономный<span class="price__type-count">$1399</span></h3>
+        <p class="price__type-description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+        <ul class="price__type-list">
+          <li class="price__type-item">Разработанный маршрут с гидом группы</li>
+          <li class="price__type-item">Перелет и трансфер</li>
+          <li class="price__type-item">Проживание в хостелах при отелях</li>
+          <li class="price__type-item">Только завтраки в отелях</li>
+          <li class="price__type-item">Экскурсии по удивительно красивым местам Европы</li>
+        </ul>
+        <button class="price__type-button" type="button">Купить тур сейчас</button>
+      </div>
+    </section>
+    <section class="help">
+      <form class="help__form">
+        <h3 class="help__title">У Вас остались вопросы?</h3>
+        <p class="help__description">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <input class="help__input" type="tel">
+        <input class="help__input" type="email">
+        <button class="help__button" type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__journey">
+      <h3 class="footer__title">Следующие путешествия</h3>
+      <ul class="footer__list">
+        <li class="footer__item">Марсель</li>
+        <li class="footer__item">Ним</li>
+        <li class="footer__item">Монпелье</li>
+        <li class="footer__item">Барселона</li>
+        <li class="footer__item">Пальма</li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">Сардиния</li>
+        <li class="footer__item">Палермо</li>
+        <li class="footer__item">Катания</li>
+        <li class="footer__item">Неаполь</li>
+        <li class="footer__item">Рим</li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">Корс</li>
+        <li class="footer__item">Ницца</li>
+        <li class="footer__item">Монако</li>
+        <li class="footer__item">Динь-ле-Бен</li>
+        <li class="footer__item">Гренобль</li>
+      </ul>
+    </div>
+    <div class="footer__contacts">
+      <h3 class="footer__title">Наши контакты</h3>
+      <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+      <a class="price__contact-tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    </div>
+    <div class="footer__corporate">
+      <h3 class="footer__title">Корпоративные путешествия</h3>
+      <p class="footer__description">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные
+        туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным
+        времяпрепровождением
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
