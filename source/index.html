@@ -18,59 +18,84 @@
 
 <body>
   <header class="header">
-    <a class="header__logo"><img src="" alt="Лого компании"></a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="">О путешествии</a></li>
-        <li class="nav__item"><a class="nav__link" href="">Цены</a></li>
-      </ul>
-    </nav>
-    <a class="header__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    <div class="header__container">
+      <a class="header__logo"><img src="img/logo.png" width="58" height="22" alt="Лого компании"></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="">О путешествии</a></li>
+          <li class="nav__item"><a class="nav__link" href="">Цены</a></li>
+        </ul>
+      </nav>
+      <a class="header__tel" href="tel:+749978468446">+7 (499) -784-684-46</a>
+    </div>
   </header>
   <main class="main">
     <section class="intro">
-      <h1 class="intro__title">Путешествие по Европе</h1>
-      <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
-        потрясающая красота
-        природы.</p>
-      <a class="intro__link" href="">смотреть тур</a>
+      <div class="intro__container">
+        <h1 class="intro__title">Путешествие по Европе</h1>
+        <p class="intro__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а
+          также
+          потрясающая красота
+          природы.</p>
+        <a class="intro__link" href="">Смотреть тур</a>
+      </div>
     </section>
     <section class="destination">
-      <h2 class="destination__title">Места посещения</h2>
-      <p class="destination__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
-      <ul class="destination__list">
-        <li class="destination__item">
-          <a class="destination__link" href="#"><span class="destination__name">Греция</span></a>
-        </li>
-        <li class="destination__item">
-          <a class="destination__link" href="#"><span class="destination__name">Албания</span></a>
-        </li>
-        <li class="destination__item">
-          <a class="destination__link" href="#"><span class="destination__name">Македония</span></a>
-        </li>
-        <li class="destination__item">
-          <a class="destination__link" href="#"><span class="destination__name">Черногория</span></a>
-        </li>
-        <li class="destination__item">
-          <a class="destination__link" href="#"><span class="destination__name">Хорватия</span></a>
-        </li>
-      </ul>
+      <div class="destination__container">
+        <h2 class="destination__title">Места посещения</h2>
+        <p class="destination__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        <ul class="destination__list">
+          <li class="destination__item">
+            <a class="destination__link" href="#">
+              <img src="img/greece.jpg" width="350" height="430" alt="Греция">
+              <span class="destination__name">Греция</span>
+            </a>
+          </li>
+          <li class="destination__item">
+            <a class="destination__link" href="#">
+              <img src="img/albania.jpg" width="350" height="430" alt="Албания">
+              <span class="destination__name">Албания</span></a>
+          </li>
+          <li class="destination__item">
+            <a class="destination__link" href="#">
+              <img src="img/macedonia.jpg" width="350" height="430" alt="Македония">
+              <span class="destination__name">Македония</span></a>
+          </li>
+          <li class="destination__item">
+            <a class="destination__link" href="#">
+              <img src="img/montenegro.jpg" width="350" height="430" alt="Черногория">
+              <span class="destination__name">Черногория</span></a>
+          </li>
+          <li class="destination__item">
+            <a class="destination__link" href="#">
+              <img src="img/croatia.jpg" width="350" height="430" alt="Хорватия">
+              <span class="destination__name">Хорватия</span></a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="country">
-      <h2 class="country__title">Греция</h2>
-      <p class="country__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных
-        на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная
-        цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в
-        высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
-      </p>
-      <button class="country__button" type="button">Купить тур сейчас</button>
-      <div class="country__review">
-        <h3 class="country__review-title">Отзывы</h3>
-        <p class="country__review-description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие
-          же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как
-          будто стоишь на краю света!
+      <div class="country__container">
+        <h2 class="country__title">Греция</h2>
+        <p class="country__description">На севере Греции находится один из крупнейших комплексов монастырей,
+          расположенных
+          на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь
+          основная
+          цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в
+          высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
         </p>
-        <span class="country__review-author">Влада Голицина</span>
+        <button class="country__button" type="button">Купить тур сейчас</button>
+        <div class="country__review">
+          <div class="country__review-container">
+            <h3 class="country__review-title">Отзывы</h3>
+            <p class="country__review-description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+              Такие
+              же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как
+              будто стоишь на краю света!
+            </p>
+            <span class="country__review-author">Влада Голицина</span>
+          </div>
+        </div>
       </div>
     </section>
     <section class="price">
