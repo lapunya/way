@@ -1,7 +1,6 @@
 .destination__container {
   width: 1170px;
   margin: 0 auto;
-  margin-bottom: 127px;
   padding-top: 200px;
 }
 
@@ -14,7 +13,7 @@
   font-weight: 600;
   font-style: normal;
   color: #2C2E3F;
-  letter-spacing: -1.245px;
+  letter-spacing: -1.2px;
 }
 
 .destination__description {
@@ -26,7 +25,7 @@
   font-weight: normal;
   font-style: normal;
   color: rgba(44, 46, 63, 0.7);
-  letter-spacing: -0.466667px;
+  letter-spacing: -0.5px;
 }
 
 .destination__list {
@@ -41,4 +40,44 @@
   width: 350px;
   height: 430px;
   margin-bottom: 100px;
+  position: relative;
 }
+
+.destination__link {
+  display: block;
+}
+
+.destination__popup {
+  width: 350px;
+  height: 430px;
+  background-color: rgba(20, 21, 23, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.destination__popup-link {
+  width: 266px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 152px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  font-style: normal;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.destination__item:hover .destination__popup {
+  display: flex;
+}
+
