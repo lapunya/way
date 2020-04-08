@@ -5,6 +5,7 @@
   margin-left: 375px;
   padding-top: 239px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .price__about {
@@ -59,12 +60,11 @@
 }
 
 .price__type {
-  width: 370px;
   margin-right: 30px;
-  padding-top: 38px;
+  padding-top: 39px;
   padding-right: 30px;
   padding-bottom: 30px;
-  padding-left: 27px;
+  padding-left: 28px;
   border: 1px solid rgba(44, 46, 63, 0.3);
   border-radius: 6px;
   &:hover {
@@ -74,8 +74,11 @@
 
 .price__type-title {
   width: 310px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   font-size: 28px;
   line-height: 38px;
   font-weight: 600;
@@ -94,7 +97,7 @@
 .price__type-description {
   width: 289px;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -108,18 +111,32 @@
   padding-top: 30px;
   padding-left: 30px;
   list-style: none;
-  border-top: 1px solid #FE7865;
+  border-top: 1px solid rgba(44, 46, 63, 0.3);
+  &--economical {
+    margin-bottom: 39px;
+  }
 }
 
 .price__type-item {
+  width: 280px;
   margin-bottom: 15px;
   font-size: 16px;
   line-height: 32px;
   font-weight: normal;
   font-style: normal;
   color: #2C2E3F;
+  position: relative;
   &:last-child {
     margin-bottom: 0;
+  }
+  &::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url("../../img/black-check.svg");
+    top: 4px;
+    left: -34px;
+    position: absolute;
   }
 }
 
@@ -139,4 +156,152 @@
   text-transform: uppercase;
   color: #FFFFFF;
   letter-spacing: 2px;
+}
+
+@media (max-width: @tablet-width) {
+  .price__container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 80px;
+    justify-content: space-around;
+  }
+
+  .price__about {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 0;
+    order: 0;
+  }
+
+  .price__about-title {
+    width: 158px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .price__about-description {
+    width: 726px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .price__contact {
+    width: 200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .price__contact-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .price__contact-tel {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .price__type {
+    margin-right: 0;
+    padding-top: 30px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .price__type-title {
+    width: 248px;
+    margin: 0 auto;
+    margin-bottom: 11px;
+    justify-content: center;
+    font-size: 24px;
+  }
+
+  .price__type-description {
+    width: 248px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .price__type-name {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .price__type-list {
+    margin-right: 20px;
+    margin-bottom: 45px;
+    margin-left: 20px;
+    padding-top: 20px;
+    &--economical {
+      margin-bottom: 35px;
+    }
+  }
+
+  .price__type-item {
+    width: 218px;
+    margin-bottom: 10px;
+  }
+
+  .price__type-button {
+    width: 288px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .price__container {
+    padding-top: 45px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .price__about {
+    margin-bottom: 40px;
+  }
+
+  .price__about-title {
+    width: 100%;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .price__about-description {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .price__contact {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .price__contact-title {
+    margin-bottom: 10px;
+  }
+
+  .price__type {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
 }

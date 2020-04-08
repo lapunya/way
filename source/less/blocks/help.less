@@ -16,11 +16,11 @@
 }
 
 .help__form {
-  width: 656px;
-  margin-right: 0;
-  margin-left: auto;
+  margin-left: 514px;
   padding: 50px;
   background-color: #FFFFFF;
+  box-shadow: 0px 4px 30px rgba(41, 54, 66, 0.1);
+  border-radius: 5px;
 }
 
 .help__title {
@@ -58,12 +58,13 @@
 }
 
 .help__button {
-  width: 176px;
-  min-height: 50px;
+  font-family: "Montserrat", "Arial", sans-serif;
   margin: 0 auto;
+  padding-top: 18px;
+  padding-right: 39px;
+  padding-bottom: 17px;
+  padding-left: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #FE7865;
   border: none;
   font-size: 12px;
@@ -73,4 +74,56 @@
   color: #FFFFFF;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+@media (max-width: @tablet-width) {
+  .help {
+    padding-top: 125px;
+  }
+
+  .help__container {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 75px;
+    background-image: url("../../img/form-back-tablet.jpg");
+    background-size: 100% 456px;
+    background-position: center;
+  }
+
+  .help__form {
+    width: 658px;
+    margin: 0 auto;
+  }
+
+  .help__title {
+    width: 345px;
+  }
+
+  .help__description {
+    width: 558px;
+  }
+
+  .help__fieldset {
+    margin-bottom: 20px;
+  }
+
+  .help__button {
+    padding: 19px 84px;
+    background-color: #FE7865;
+    border: none;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+    font-style: normal;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+}
+
+@media (max-width: @mobile-width) {
+  .help {
+    display: none;
+  }
 }

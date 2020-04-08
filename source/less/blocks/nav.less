@@ -1,3 +1,7 @@
+.nav__toggle {
+  display: none;
+}
+
 .nav__list {
   padding: 0;
   padding-top: 2px;
@@ -6,6 +10,9 @@
   display: flex;
 }
 
+.nav__list--closed {
+  display: none;
+}
 
 .nav__item {
   margin-right: 40px;
@@ -24,5 +31,31 @@
   &:hover {
     color: #FE7865;
     cursor: pointer;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .nav {
+    margin-left: auto;
+  }
+
+  .nav__toggle {
+    width: 72px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FE7865;
+    background-image: url("../../img/burger-menu.svg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .nav__toggle {
+    width: 50px;
   }
 }

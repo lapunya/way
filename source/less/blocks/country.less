@@ -12,6 +12,7 @@
   padding-bottom: 15px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgba(44, 46, 63, 0.3);
 }
 
@@ -26,6 +27,15 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.country__information {
+  display: none;
+}
+
+.country__information--active {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .country__tour {
@@ -58,9 +68,10 @@
 }
 
 .country__tour-button {
+  display: block;
   width: 250px;
-  height: 75px;
-  padding-top: 5px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #FE7865;
   font-size: 12px;
   line-height: 15px;
@@ -74,7 +85,6 @@
 }
 
 .country__review {
-  width: 700px;
   min-height: 596px;
   padding-top: 114px;
   padding-bottom: 115px;
@@ -83,10 +93,21 @@
   background-size: 430px 596px;
   background-repeat: no-repeat;
   background-position: left;
+  &--albania {
+    background-image: url("../../img/albania-review.jpg");
+  }
+  &--macedonia {
+    background-image: url("../../img/macedonia-review.jpg");
+  }
+  &--montenegro {
+    background-image: url("../../img/montenegro-review.jpg");
+  }
+  &--croatia {
+    background-image: url("../../img/croatia-review.jpg");
+  }
 }
 
 .country__review-container {
-  width: 382px;
   padding: 30px;
   padding-bottom: 35px;
   background-color: #FFFFFF;
@@ -134,4 +155,127 @@
     top: -11px;
     left: 0;
   }
+}
+
+@media (max-width: @tablet-width) {
+  .country__container {
+    width: 100%;
+  }
+
+  .country__list {
+    display: none;
+  }
+
+  .country__tour {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .country__review {
+    width: 100%;
+    min-height: auto;
+    padding-top: 95px;
+    padding-right: 193px;
+    padding-bottom: 0;
+    padding-left: 193px;
+    background-image: url("../../img/greece-review-tablet.jpg");
+    background-size: 100% 415px;
+    background-position: top;
+  }
+
+  .country__tour-title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  .country__tour-description {
+    width: 94.5%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .country__tour-button {
+    margin: 0 auto;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+  }
+
+  .country__review-container {
+    width: 382px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .country__review-description {
+    margin-bottom: 35px;
+  }
+
+  .country__review-title {
+    width: 289px;
+  }
+
+}
+
+@media (max-width: @mobile-width) {
+  .country__container {
+    width: 100%;
+  }
+
+  .country__tour {
+    width: 100%;
+  }
+
+  .country__tour-title {
+    width: 90%;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .country__tour-description {
+    width: 90%;
+  }
+
+  .country__tour-button {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .country__review {
+    width: 100%;
+    padding: 0;
+    padding-top: 50px;
+    min-height: auto;
+    background-image: url("../../img/greece-review.jpg");
+    background-size: 100% 596px;
+    background-position: top;
+  }
+
+  .country__review-container {
+    width: 268px;
+    padding: 30px 20px;
+  }
+
+  .country__review-title {
+    width: 228px;
+    margin-bottom: 31px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .country__review-description {
+    width: 228px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
 }
