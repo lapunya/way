@@ -23,6 +23,16 @@
   font-weight: 600;
   font-style: normal;
   color: #2C2E3F;
+  position: relative;
+  &::after {
+    content: "";
+    width: 175px;
+    height: 2.92px;
+    background-color: #FE7865;
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+  }
 }
 
 .price__about-description {
@@ -183,6 +193,9 @@
     font-size: 30px;
     line-height: 45px;
     text-align: center;
+    &::after {
+      display: none;
+    }
   }
 
   .price__about-description {

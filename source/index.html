@@ -51,7 +51,7 @@
           <li class="destination__item">
             <a class="destination__link" href="#">
               <img class="destination__image" src="img/greece.jpg" width="350" height="430" alt="Греция">
-              <!-- <span class="destination__name">Греция</span> -->
+              <span class="destination__name">Греция</span>
             </a>
             <div class="destination__popup">
               <a class="destination__popup-link" href="#country">Смотреть подробнее</a>
@@ -60,7 +60,7 @@
           <li class="destination__item">
             <a class="destination__link" href="#">
               <img class="destination__image" src="img/albania.jpg" width="350" height="430" alt="Албания">
-              <!-- <span class="destination__name">Албания</span> -->
+              <span class="destination__name">Албания</span>
             </a>
             <div class="destination__popup">
               <a class="destination__popup-link" href="#country">Смотреть подробнее</a>
@@ -69,7 +69,7 @@
           <li class="destination__item">
             <a class="destination__link" href="#">
               <img class="destination__image" src="img/macedonia.jpg" width="350" height="430" alt="Македония">
-              <!-- <span class="destination__name">Македония</span> -->
+              <span class="destination__name">Македония</span>
             </a>
             <div class="destination__popup">
               <a class="destination__popup-link" href="#country">Смотреть подробнее</a>
@@ -78,7 +78,7 @@
           <li class="destination__item">
             <a class="destination__link" href="#">
               <img class="destination__image" src="img/montenegro.jpg" width="350" height="430" alt="Черногория">
-              <!-- <span class="destination__name">Черногория</span> -->
+              <span class="destination__name">Черногория</span>
             </a>
             <div class="destination__popup">
               <a class="destination__popup-link" href="#country">Смотреть подробнее</a>
@@ -87,7 +87,7 @@
           <li class="destination__item">
             <a class="destination__link" href="#">
               <img class="destination__image" src="img/croatia.jpg" width="350" height="430" alt="Хорватия">
-              <!-- <span class="destination__name">Хорватия</span> -->
+              <span class="destination__name">Хорватия</span>
             </a>
             <div class="destination__popup">
               <a class="destination__popup-link" href="#country">Смотреть подробнее</a>
@@ -259,8 +259,9 @@
           <h3 class="help__title">У Вас остались вопросы?</h3>
           <p class="help__description">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <div class="help__fieldset">
-            <input class="help__input" type="tel">
-            <input class="help__input" type="email">
+            <label class="help__label-tel" for="tel">+7</label>
+            <input class="help__input help__input--tel" type="tel" id="tel" name="Telephone" minlength="10" maxlength="10" pattern="[0-9]{10}" placeholder="Введите 10 цифр номера" autocomplete="off" required>
+            <input class="help__input" type="email" name="E-mail" placeholder="E-mail" autocomplete="off">
           </div>
           <button class="help__button" type="submit">Отправить</button>
         </form>
