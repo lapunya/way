@@ -1,31 +1,42 @@
 .header__container {
-  width: 1155px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   padding-top: 39px;
+  padding-right: 20.1vw;
   padding-bottom: 32px;
+  padding-left: 19.43vw;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .header__logo {
   display: flex;
-  margin-right: 622px;
+  margin-right: auto;
 }
 
 .header__tel {
-  margin-right: 0;
-  margin-left: auto;
   font-size: 18px;
   line-height: 29px;
   font-weight: normal;
   font-style: normal;
   color: #FE7865;
+  position: relative;
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../../img/phone.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -38px;
+  }
 }
 
 @media (max-width: @tablet-width) {
   .header__container {
     width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
 
   .header__logo {

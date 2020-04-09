@@ -1,3 +1,7 @@
+.nav {
+  margin-right: 5vw;
+}
+
 .nav__toggle {
   display: none;
 }
@@ -10,12 +14,8 @@
   display: flex;
 }
 
-.nav__list--closed {
-  display: none;
-}
-
 .nav__item {
-  margin-right: 40px;
+  margin-right: 2.08vw;
   &:last-child {
     margin-right: 0;
   }
@@ -36,7 +36,17 @@
 
 @media (max-width: @tablet-width) {
   .nav {
+    margin-right: 0;
     margin-left: auto;
+  }
+
+  .nav__list {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF;
+    display: none;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
 
   .nav__toggle {
@@ -51,11 +61,116 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+    z-index: 2;
   }
+
+  .nav--nojs {
+    width: 320px;
+  }
+
+  .nav--nojs .nav__list {
+    display: flex;
+  }
+
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+
+  .nav--opened {
+    width: 320px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .nav--opened .nav__list {
+    display: flex;
+  }
+
+  .nav--opened .nav__toggle {
+    background-color: transparent;
+    background-image: url("../../img/cross.svg");
+    background-size: 22px 22px;
+    position: absolute;
+    right: 0;
+  }
+
+  .nav--closed {
+    position: relative;
+  }
+
+  .nav--closed .nav__toggle {
+    display: flex;
+  }
+
+  .nav__item {
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    background-color: #FBF8F8;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .nav__link {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #48494D;
+  }
+
 }
 
 @media (max-width: @mobile-width) {
   .nav__toggle {
     width: 50px;
   }
+
+  .nav__list {
+    width: 100%;
+    min-height: 510px;
+    padding-top: 134px;
+  }
+
+  .nav--nojs {
+    width: 100%;
+  }
+
+  .nav--opened {
+    width: 100%;
+  }
+/*
+  .nav--closed {
+    position: relative;
+  }
+
+  .nav--closed .nav__toggle {
+    display: flex;
+  }
+
+  .nav__item {
+    width: 100%;
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 16px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    background-color: #FBF8F8;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .nav__link {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #48494D;
+  }
+*/
 }
