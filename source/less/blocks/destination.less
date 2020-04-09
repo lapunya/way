@@ -1,5 +1,6 @@
 .destination__container {
-  width: 60.94vw;
+  width: 95%;
+  max-width: 1170px;
   margin: 0 auto;
   padding-top: 200px;
 }
@@ -82,7 +83,7 @@
 }
 
 .destination__popup {
-  width: 350px;
+  width: 100%;
   height: 430px;
   background-color: rgba(20, 21, 23, 0.6);
   position: absolute;
@@ -152,12 +153,18 @@
     width: 288px;
     height: 425px;
   }
+
+  .destination__name {
+    left: 36px;
+  }
+
 }
 
 @media (max-width: @mobile-width) {
   .destination__container {
     display: block;
     width: 100%;
+    padding-top: 109px;
     padding-right: 16px;
     padding-left: 16px;
   }
