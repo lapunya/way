@@ -1,22 +1,63 @@
 .header__container {
-  width: 1155px;
+  width: 95%;
+  max-width: 1161px;
   margin: 0 auto;
   padding-top: 39px;
   padding-bottom: 32px;
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .header__logo {
-  margin-right: 622px;
+  display: flex;
+  margin-right: auto;
 }
 
 .header__tel {
-  margin-right: 0;
-  margin-left: auto;
   font-size: 18px;
   line-height: 29px;
   font-weight: normal;
   font-style: normal;
   color: #FE7865;
+  position: relative;
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/orange-phone.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: -38px;
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .header__container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .header__logo {
+    margin-right: 0;
+    margin-top: 18px;
+    margin-bottom: 14px;
+    margin-left: 21px;
+  }
+
+  .header__logo-image {
+    width: 44px;
+    height: 17px;
+  }
+
+  .header__tel {
+    display: none;
+  }
+}
+
+
+@media (max-width: @mobile-width) {
+  .header__logo {
+    margin-left: 16px;
+  }
 }

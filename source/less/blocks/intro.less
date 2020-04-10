@@ -1,12 +1,13 @@
 .intro {
   min-height: 860px;
-  background-image: url("../../img/intro.jpg");
-  background-size: 1920px 860px;
+  background-image: url("../img/intro-desktop.jpg");
+  background-size: 100% 860px;
+  background-repeat: no-repeat;
   padding-top: 185px;
 }
 
 .intro__container {
-  margin-left: 1075px;
+  margin-left: 55.99vw;
 }
 
 .intro__title {
@@ -36,8 +37,8 @@
 .intro__link {
   display: block;
   width: 340px;
-  height: 75px;
   padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 41px;
   background-color: #FE7865;
   font-size: 12px;
@@ -48,4 +49,100 @@
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  position: relative;
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/arrow-down.svg");
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 31px;
+    right: 40px;
+  }
+  &:hover {
+    background-color: #F17D4B;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.6)
+  }
+}
+
+@media (max-width: @tablet-width) {
+  .intro {
+    min-height: 344px;
+    background-image: url("../img/intro-tablet.jpg");
+    background-size: 100% 344px;
+    padding-top: 60px;
+  }
+
+  .intro__container {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .intro__title {
+    width: auto;
+    margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: normal;
+  }
+
+  .intro__description {
+    width: 398px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .intro__link {
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    &::after {
+      top: 18px;
+    }
+  }
+
+}
+
+@media (max-width: @mobile-width) {
+  .intro {
+    min-height: 235px;
+    background-image: url("../img/intro-mobile.jpg");
+    background-size: 100% 235px;
+    padding-top: 81px;
+  }
+
+  .intro__container {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .intro__title {
+    width: 290px;
+    margin: 0 auto;
+    margin-bottom: 102px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .intro__description {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #2C2E3F;
+  }
+
+  .intro__link {
+    width: 100%;
+  }
+
 }
